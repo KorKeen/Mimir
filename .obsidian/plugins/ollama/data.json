@@ -1,0 +1,10 @@
+{
+  "ollamaUrl": "http://localhost:11434",
+  "commands": [
+    {
+      "name": "Summarize",
+      "prompt": "summarize this section and highlight the most important parts",
+      "model": "llama3.2"
+    }
+  ]
+}
