@@ -2,7 +2,9 @@
 <html>
 <head></head>
 <body>
-<h1></h1>
+<h1>Hello</h1>
+<h2>Hello a second time</h2>
+<h3>Hello a third time</h3>
 </body>
 </html>
 <style>
@@ -18,11 +20,13 @@ h1::before {
 }
 
 h2::before {
+  margin-left: 0.5cm;
   counter-increment: ssection;
   content: counter(section) "." counter(ssection) ". ";
 }
 
-h1::before {
+h3::before {
+  margin-left: 1.0cm;
   counter-increment: sssection;
   content: counter(section) "." counter(ssection) "." counter(sssection) ". ";
 }
