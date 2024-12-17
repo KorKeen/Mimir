@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<h1></h1>
+</body>
+</html>
+<style>
+/* Reset the main counter for h1 */
+body {counter-reset: section;}
+body {counter-reset: ssection;}
+body {counter-reset: sssection;}
+
+
+h1::before {
+  counter-increment: section;
+  content: counter(section) ". ";
+}
+
+h2::before {
+  counter-increment: ssection;
+  content: counter(section) "." counter(ssection) ". ";
+}
+
+h1::before {
+  counter-increment: sssection;
+  content: counter(section) "." counter(ssection) "." counter(sssection) ". ";
+}
+</style>
