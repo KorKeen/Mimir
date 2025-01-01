@@ -54,3 +54,25 @@ Sie verbindet die Kopfkonzentration auf der $y=x$ Gerade und die Feedkonzentrati
 <b style="color: red;">Abtriebsgerade:</b>
 Diese wird mittels dieser [[#Wichtige Formeln#Abtriebsgerade | Formel]] berechnet und bezieht sich auf den Teil der Kolonne unter dem Feed.
 Sie verbindet den Punkt an dem sich $x_F$ und die Verstärkergerade schneiden mit der Sumpfzusammensetzung auf der $y=x$ Gerade.
+
+
+## Vorgehensweise Rechnen
+**Beispiel 12.3:**
+In einer kontinuierlich arbeitenden Gegenstromdestillationsanlage werden 1000 $kg/h$ eines Gemisches ($\alpha$ = 2,4), bestehend aus 25 Massen-% Benzol und 75 Massen-% Toluol, so getrennt, dass im Destillat 95 Massen-% Benzol und im Sumpf 98 Massen-% Toluol erhalten werden. Die Anlage arbeitet mit dem 2-fachen Mindestrücklaufverhältnis.
+Der am Kopf der Kolonne angebrachte Kondensator arbeitet mit Totalkondensation ohne Temperaturabsenkung. Das Kühlwasser erwärmt sich dabei um 10 K.
+Es sind zu berechnen:
+a) Die theoretische Trennstufenzahl der Kolonne
+b) Die benötigte Kühlwassermenge im Kondensator
+
+$r_{mol,B} = r_B·M_B = 394 kJ·kg⁻¹ · 78,11 kg·kmol⁻¹ = 30775 kJ·kmol⁻¹$
+$r_{mol,T} = r_T·M_T = 356 kJ·kg⁻¹ · 92,14 kg·kmol⁻¹ = 32802 kJ·kmol⁻¹$
+
+**Schritte zur Berechnung**
+1. Alle Massenströme mittels $\dot n_F=\dot n_K+\dot n_S$ berechnen $$\dot F\cdot x_A=\dot K\cdot x_A+\dot S\cdot x_A$$
+	1.1.  Dafür werden die die Zusammensetzungen und die mittleren molaren Massen benötigt.
+2. Nun wird das McCabe-Thiele Diagramm aufgestellt
+	2.1. Die $y=x$-Linie aufstellen
+	2.2. Die Gleichgewichtskurve einzeichnen ([[#Wichtige Formeln#Gleichgewichtskurve|Formel]])
+	2.3. Die Verstärkergerade aufstellen ([[#Wichtige Formeln#Verstärkergerade|Formel]])
+	2.4 Die Abtriebsgerade aufstellen ([[#Wichtige Formeln#Abtriebsgerade|Formel]])
+
