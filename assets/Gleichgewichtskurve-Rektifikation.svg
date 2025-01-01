@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg
+    width="100"
+    height="100"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+>
+<rect x="0" y="0" width="100" height="100" fill="white" />
+<line
+        x1="0"
+        x2="100"
+        y1="100"
+        y2="0"
+        stroke="gray"
+        stroke-width="0.6"
+        stroke-dasharray="1,1"
+    />
+<line x1="20" x2="20" y1="0" y2="100" stroke="blue" stroke-width="0.4" />
+<line x1="50" x2="50" y1="0" y2="100" stroke="blue" stroke-width="0.4" />
+<line x1="80" x2="80" y1="0" y2="100" stroke="blue" stroke-width="0.4" />
+
+<path d="M 0,100 Q 50,20 100,0" fill="none" stroke="black" stroke-width="0.6" />
+
+<!--Verstärkergerade-->
+<line x1="80" x2="0" y1="20" y2="80" stroke="green" stroke-width="0.4" />
+
+<!--Abtriebsgerade-->
+<line x1="50" x2="4" y1="42.5" y2="100" stroke="red" stroke-width="0.4" />
+</svg>
