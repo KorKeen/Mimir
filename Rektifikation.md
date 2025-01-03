@@ -18,14 +18,14 @@ $\dot n_R$...Stoffmengenstrom Rücklauf
 $\dot n_K$...Stoffmengenstrom
 
 ### Verstärkergerade
-$$y_D=\frac{1}{r+1}\cdot x_R+\frac{1}{r+1}\cdot x_K$$
+$$y_D=\frac{r}{r+1}\cdot x_R+\frac{1}{r+1}\cdot x_K$$
 $r$...Rücklaufverhältnis
 $x_R$...Stoffmengenverhältnis Rücklauf
 $x_K$...Stoffmengenverhältnis Kopf
 
 
 ### Abtriebsgerade
-$$y_D=\frac{r'}{r'-1}\cdot x_R+\frac{r'}{r'-1}\cdot x_S$$
+$$y_D=\frac{r'}{r'-1}\cdot x_R-\frac{1}{r'-1}\cdot x_S$$
 $r'$...Rückdampfverhältnis
 $x_R$...Stoffmengenverhältnis Rücklauf
 $x_S$...Stoffmengenverhältnis Sumpf
@@ -68,11 +68,16 @@ $r_{mol,B} = r_B·M_B = 394 kJ·kg⁻¹ · 78,11 kg·kmol⁻¹ = 30775 kJ·kmol�
 $r_{mol,T} = r_T·M_T = 356 kJ·kg⁻¹ · 92,14 kg·kmol⁻¹ = 32802 kJ·kmol⁻¹$
 
 **Schritte zur Berechnung**
-1. Alle Massenströme mittels $\dot n_F=\dot n_K+\dot n_S$ berechnen $$\dot F\cdot x_A=\dot K\cdot x_A+\dot S\cdot x_A$$
-	1.1.  Dafür werden die die Zusammensetzungen und die mittleren molaren Massen benötigt.
-2. Nun wird das McCabe-Thiele Diagramm aufgestellt
-	2.1. Die $y=x$-Linie aufstellen
-	2.2. Die Gleichgewichtskurve einzeichnen ([[#Wichtige Formeln#Gleichgewichtskurve|Formel]])
-	2.3. Die Verstärkergerade aufstellen ([[#Wichtige Formeln#Verstärkergerade|Formel]])
-	2.4 Die Abtriebsgerade aufstellen ([[#Wichtige Formeln#Abtriebsgerade|Formel]])
-
+1. Die Zusammensetzung des Kopfs und Feeds berechnen -> Stoffmengenverhältnis ($x_K$, $x_F$)
+2. Das Gleichgewichtsdiagramm mit [[#Wichtige Formeln#Gleichgewichtskurve|Formel]] berechnen
+3. Den $y$-Wert für den Feed berechnen
+4. Das Mindestrücklaufverhältnis berechnen $$r_{min}=\frac{x_K-y_F}{y_F-x_F}$$
+5. Für die Verstärkergerade die Werte berechnen $$y_D=r_{faktor}*x+d=\frac{r}{1+r}\cdot x+\frac{1}{1+r}\cdot x_K$$
+   Dabei ist $$r_{fraktor}=\frac{r}{r+1}$$ $$d=\frac{1}{r+1}\cdot x_K$$
+6. Das Diagramm sollte nun so ausschauen. ![[Pasted image 20250102130243.png|400]]
+7. Tatsächlich wird jedoch ein höheres $r$ verwendet um Produkt abführen zu können. Also wird das $r_{theo}$ mit einem Faktor multipliziert und erneut berechnet. 
+   $r_{faktor}$ und $d$ müssen erneut berechnet werden.
+   
+   Damit erhält man dieses Diagramm.
+   ![[Pasted image 20250102131103.png|400]]
+8. Nun wird die Abtriebsgerade berechnet mit dieser [[#Wichtige Formeln#Abtriebsgerade|Formel]] berechnet.
