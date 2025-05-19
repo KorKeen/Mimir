@@ -9,8 +9,26 @@ tags:
 ## Wichtige Formeln
 ### Trennfaktor / relative Flüchtigkeit
 $$\alpha = \frac{p_A}{p_B}$$
-$p_A$...Druck des leichter flüchtigen Stoffs
-$p_B$...Druck von Stoff A
+$p_A$...Partialdruck des leichter flüchtigen Stoffs
+$p_B$...Partialdruck von Stoff B
+
+### Gleichgewichtskurve
+$$y_A=\frac{x_A\cdot\alpha}{x_A \cdot(\alpha-1)+1}$$
+$x_A$...Stoffmengenanteil A
+$\alpha$...[Trennfaktor](((67692a2d-c051-4fab-a2c9-c782e36ece87)))
+
+### Verhältnis der Stoffmengenströme
+>Diese werden meist in Massen angegeben, bei sehr unterschiedlichen molaren Massen aber auch in Stoffmengen.
+
+$$\dot F=\dot S+\dot K$$
+Alles das aus der Destillation entnommen wird ($S$ & $K$) muss wieder zugeführt werden ($F$).
+$$\dot R=\dot K\cdot r$$
+Das [[#Wichtige Formeln#Rücklaufverhältnis| Rücklaufverhältnis]] ($r$), beschreibt das Verhältnis von Kopfstrom zu Rücklaufstrom.
+$$\dot V=\dot K+\dot R$$
+$\dot V$...Dampf der im Verstärkerteil aufsteigt
+Der Dampf der im Verstärkerteil aufsteigt muss auch im Abtriebsteil aufsteigen, da der Dampf im gleichen Ausmaß kondensiert wie auch wider verdampft.
+$$r'=\frac{\dot V}{\dot S}$$
+Das Rückdampfverhältnis ist definiert durch das Verhältnis des Dampfes der aus dem Sumpf aufsteigt und dem Sumpfprodukt.
 
 ### Rücklaufverhältnis
 $$r=\frac{\dot n_R}{\dot n_K}$$
@@ -30,10 +48,7 @@ $r'$...Rückdampfverhältnis
 $x_R$...Stoffmengenverhältnis Rücklauf
 $x_S$...Stoffmengenverhältnis Sumpf
 
-### Gleichgewichtskurve
-$$y_A=\frac{x_A\cdot\alpha}{x_A \cdot(\alpha-1)+1}$$
-$x_A$...Stoffmengenanteil A
-$\alpha$...[Trennfaktor](((67692a2d-c051-4fab-a2c9-c782e36ece87)))
+
 
 ## Theorie
 **Gleichgewichtsdiagramm:**
@@ -80,4 +95,7 @@ $r_{mol,T} = r_T·M_T = 356 kJ·kg⁻¹ · 92,14 kg·kmol⁻¹ = 32802 kJ·kmol�
    
    Damit erhält man dieses Diagramm.
    ![[Pasted image 20250102131103.png|400]]
-8. Nun wird die Abtriebsgerade berechnet mit dieser [[#Wichtige Formeln#Abtriebsgerade|Formel]] berechnet.
+8. Nun wird die Abtriebsgerade berechnet mit dieser [[#Wichtige Formeln#Abtriebsgerade|Formel]] berechnet. ![[Picture1.png|560]]
+
+$$x=0\longrightarrow y_D=\frac{1}{r+1}\cdot x_K\longrightarrow r=\frac{1\cdot x_K}{y_D}-1$$
+$$$$
